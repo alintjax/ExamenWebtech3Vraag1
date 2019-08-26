@@ -1,0 +1,18 @@
+<div>
+  <h1>Zoek overtreding</h1>
+
+  <form (ngSubmit)='onSubmit()'>
+
+    <div [formGroup]='search'>
+      <label for='opnameplaatsStraat'>Opnameplaats Straat :</label>&nbsp;&nbsp;
+      <input type='text' formControlName='opnameplaatsStraat' id="opnameplaatsStraat">
+    </div>
+    <br />
+    <button type='submit'>Zoek</button>
+
+  </form>
+  <br /><br />
+  <h2> Result</h2>
+  <label>Examen :&nbsp;</label>{{ examen }}<br />
+  <button routerLink="/list">Home</button>
+</div>
